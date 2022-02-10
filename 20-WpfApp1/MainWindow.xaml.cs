@@ -38,7 +38,7 @@ namespace _20_WpfApp1
             {
                 double diamDuct = Convert.ToDouble(diameter.Text);
                 double dlinaDuct = Convert.ToDouble(dlina.Text);
-                double areaDouble = Math.Round((diamDuct / 1000) * dlinaDuct * Math.PI, 3);
+                double areaDouble = Math.Round((diamDuct / 1000) * dlinaDuct * Math.PI, 3); // расчет площади круглого воздуховода
                 area.Text = areaDouble.ToString();
 
                 airDucts.Add(new AirDuct()
@@ -63,7 +63,7 @@ namespace _20_WpfApp1
                 double widthDuct = Convert.ToDouble(width.Text);
                 double heightDuct = Convert.ToDouble(height.Text);
                 double dlinaDuct = Convert.ToDouble(dlina1.Text);
-                double areaDouble = Math.Round((2 * (widthDuct + heightDuct) / 1000) * dlinaDuct, 3);
+                double areaDouble = Math.Round((2 * (widthDuct + heightDuct) / 1000) * dlinaDuct, 3); // расчет площади прямоугольного воздуховода 
                 area1.Text = areaDouble.ToString();
 
                 airDucts.Add(new AirDuct()
